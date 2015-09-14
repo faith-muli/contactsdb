@@ -13,8 +13,10 @@ import android.util.Log;
 public class UserDBHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME="USERINFO.DB";
     private static final int DATABASE_VERSION=1;
-    private static  final String CREATE_QUERY="CREATE TABLE "+ UserContact.NewUserInfo.TABLE_NAME+"("+ UserContact.NewUserInfo.USER_NAME+" TEXT,"+
-            UserContact.NewUserInfo.USER_MOB+" TEXT,"+ UserContact.NewUserInfo.USER_EMAIL+" TEXT);";
+    private static  final String CREATE_QUERY="CREATE TABLE "+ UserContact.NewUserInfo.TABLE_NAME+
+            "("+ UserContact.NewUserInfo.USER_NAME+" TEXT,"+
+            UserContact.NewUserInfo.USER_MOB+" TEXT,"+
+            UserContact.NewUserInfo.USER_EMAIL+" TEXT);";
 
     public UserDBHelper(Context context)
     {
